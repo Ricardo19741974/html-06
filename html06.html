@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-nr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {background-color: rgb(86, 86, 167);
+        color: whitesmoke;
+        font: normal 15pt Arial;
+        
+        }
+        h1{
+            color: rgb(159, 206, 65);
+        }
+    </style>
+</head>
+<body>
+ <h1>Olá, Mundo da Informatica!</h1> 
+ <p>Ja iniciamos o ponta pé inicial</p>
+ <script>
+    // Criação de objeto e propriedade ---------------------------
+var cadastro = { nome:"Ricardo", idade:47, genero:"masculino",
+notas: [9.5, 8.5, 10.0]
+}
+
+var cadastro2 = new Object()
+cadastro2.nome = "Rosangêla"
+cadastro2.notas = [9.5, , 10.0]
+console.log(cadastro2)
+
+
+// Adcionar propriedades por fora ----------------------------
+var novaPropriedade = "cursos"
+cadastro[novaPropriedade] = "Javascript"
+
+cadastro.instrução = "Superior Completo"
+cadastro["sobrenome"] = "Rocker"
+
+
+// Extrair propriedades do objeto ----------------------------
+console.log(cadastro)
+console.log(cadastro.nome)
+console.log(cadastro["nome"])
+console.log(cadastro.notas[1])
+console.log(cadastro["notas"][1])
+
+
+ </script>
+</body>
+</html>
